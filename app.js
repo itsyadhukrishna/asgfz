@@ -6,18 +6,22 @@
 
 /* ── TICKER DATA ── */
 const TICKER_ITEMS = [
-  'Boeing 737 / 747 / 777 / 787 Series',
-  'Airbus A320 / A330 / A350 / A380',
-  'CFM56 & LEAP Engine Components',
-  'GE90 / GEnx / CF34 Parts',
-  'Honeywell Avionics & APU Systems',
-  'Collins Aerospace LRUs',
-  'Safran Landing Systems & Brakes',
-  'Parker Hydraulics & Pneumatics',
-  'Aircraft-on-Ground (AOG) Support',
-  'Line Replaceable Units (LRU)',
-  'Pratt & Whitney PW4000 / V2500',
-  'Structural Airframe Components'
+  'Boeing',
+  'Airbus',
+  'Airbus Eurocopter',
+  'ATR',
+  'AW Helicopter',
+  'BEECHCRAFT',
+  'Bell Helicopter',
+  'BOMBARDIER',
+  'Cessna',
+  'Consumable Items',
+  'EMBRAER',
+  'Engine Parts',
+  'General Items',
+  'GROB G',
+  'Sikorsky Helicopter',
+  'SPARTAN',
 ];
 
 /* ── CATEGORIES DATA ── */
