@@ -1,189 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ASG FZE LLC | Aircraft Spare Parts Supplier</title>
+  <link rel="icon" type="image/png" href="./img/logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav id="navbar">
-  <div class="nav-inner">
-    <a href="#hero" class="nav-logo">
-      <div class="logo-mark">ASG</div>
-      <div class="logo-text-wrap">
-        <span class="logo-primary">ASG FZE LLC</span>
-        <span class="logo-sub">Aircraft Spare Parts Supplier</span>
-      </div>
-    </a>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#search">Search Parts</a></li>
-      <li><a href="#products">Categories</a></li>
-      <li><a href="#featured">Products</a></li>
-      <li><a href="#why">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="nav-right">
-      <div class="nav-aog">AOG 24/7</div>
-      <a href="#contact" class="btn btn-gold btn-sm">Request Quote</a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg-img">
-    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1800&q=80" alt="Aircraft in flight">
-    <div class="hero-overlay"></div>
-  </div>
-  <div class="hero-content container">
-    <div class="hero-badge">ASG FZE LLC</div>
-    <h1 class="hero-title">Aircraft Spare Parts Supplier</h1>
-    <p class="hero-desc">We Provide The Best Products To You</p>
-    <div class="hero-actions">
-      <a href="#search" class="btn btn-gold">&#128269; Search Parts</a>
-      <a href="#featured" class="btn btn-outline">View Catalog</a>
-    </div>
-  </div>
-  <div class="hero-stats-bar">
-    <div class="hero-stat"><span class="n">1K+</span><span class="l">Part Numbers</span></div>
-    <div class="hero-stat"><span class="n">50+</span><span class="l">OEM Partners</span></div>
-    <div class="hero-stat"><span class="n">24/7</span><span class="l">Support</span></div>
-    <div class="hero-stat"><span class="n">40+</span><span class="l">Countries Served</span></div>
-  </div>
-</section>
-
-<!-- TICKER -->
-<div class="ticker-wrap" aria-hidden="true">
-  <div class="ticker-inner" id="ticker"></div>
-</div>
-
-<!-- VISUAL STRIP -->
-<div class="visual-strip">
-  <div class="vs-item">
-    <img src="https://static.vecteezy.com/system/resources/thumbnails/072/208/509/small/close-up-of-a-jet-engine-s-turbine-photo.jpeg" alt="Jet engine turbine blades" loading="lazy">
-    <div class="vs-label">Engine Components</div>
-  </div>
-  <div class="vs-item">
-    <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=600&q=75" alt="Aircraft cockpit avionics" loading="lazy">
-    <div class="vs-label">Avionics &amp; Navigation</div>
-  </div>
-  <div class="vs-item">
-    <img src="https://images.pexels.com/photos/30050860/pexels-photo-30050860.jpeg" alt="Aircraft nose gear" loading="lazy">
-    <div class="vs-label">Landing Gear Systems</div>
-  </div>
-  <div class="vs-item">
-    <img src="https://www.avihub.in/wp-content/uploads/2021/01/58-consuamable-products.jpg" alt="MRO hangar maintenance" loading="lazy">
-    <div class="vs-label">Consumable Products</div>
-  </div>
-</div>
-
-<!-- SEARCH -->
-<section id="search">
-  <div class="container">
-    <div class="search-inner">
-      <div class="section-eyebrow">Part Finder</div>
-      <h2 class="section-title" style="text-align:center">Search Our <em>Inventory</em></h2>
-      <p class="section-lead" style="margin:0 auto 36px;text-align:center">Enter a part number, ATA chapter, description, or aircraft type. 10,000+ active part numbers available.</p>
-      <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Part Number, Description, ATA Chapter, Aircraft Type..." autocomplete="off">
-        <select id="searchCat">
-          <option value="">All Categories</option>
-          <option value="avionics">Avionics</option>
-          <option value="engine">Engine</option>
-          <option value="hydraulics">Hydraulics</option>
-          <option value="landing">Landing Gear</option>
-          <option value="electrical">Electrical</option>
-          <option value="interiors">Consumable Products</option>
-        </select>
-        <button id="searchBtn">Search</button>
-      </div>
-      <div class="filter-row">
-        <button class="filter-chip active" data-filter="">All Aircraft</button>
-        <button class="filter-chip" data-filter="Boeing">Boeing</button>
-        <button class="filter-chip" data-filter="Airbus">Airbus</button>
-        <button class="filter-chip" data-filter="Embraer">Embraer</button>
-        <button class="filter-chip" data-filter="Bombardier">Bombardier</button>
-        <button class="filter-chip" data-filter="ATR">ATR</button>
-      </div>
-      <div id="search-results">
-        <p class="results-meta" id="results-count"></p>
-        <div class="results-grid" id="results-grid"></div>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-mark">ASG</div>
+        <div class="logo-text-wrap">
+          <span class="logo-primary">ASG FZE LLC</span>
+          <span class="logo-sub">Aircraft Spare Parts Supplier</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#search">Search Parts</a></li>
+        <li><a href="#products">Categories</a></li>
+        <li><a href="#featured">Products</a></li>
+        <li><a href="#why">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="nav-aog">AOG 24/7</div>
+        <a href="#contact" class="btn btn-gold btn-sm">Request Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- CATEGORIES WITH IMAGES -->
-<section id="products">
-  <div class="container">
-    <div class="products-header">
-      <div>
-        <div class="section-eyebrow">Component Categories</div>
-        <h2 class="section-title">What We <em>Supply</em></h2>
-      </div>
-      <a href="#contact" class="btn btn-outline">Full Catalogue &rarr;</a>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-img">
+      <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1800&q=80" alt="Aircraft in flight">
+      <div class="hero-overlay"></div>
     </div>
-    <div class="cat-img-grid">
-      <div class="cat-img-card reveal" onclick="openCategoryModal(0)">
-        <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=700&q=75" alt="Avionics cockpit" loading="lazy">
-        <div class="cic-overlay">
-          <div class="cic-ata"></div>
-          <div class="cic-name">Avionics &amp; Navigation</div>
-          <div class="cic-tags"><span>LRU</span><span>FMS</span><span>TCAS</span><span>ILS</span></div>
-        </div>
+    <div class="hero-content container">
+      <div class="hero-badge">ASG FZE LLC</div>
+      <h1 class="hero-title">Aircraft Spare Parts Supplier</h1>
+      <p class="hero-desc">We Provide The Best Products To You</p>
+      <div class="hero-actions">
+        <a href="#search" class="btn btn-gold">&#128269; Search Parts</a>
+        <a href="#featured" class="btn btn-outline">View Catalog</a>
       </div>
-      <div class="cat-img-card reveal" data-delay="60" onclick="openCategoryModal(1)">
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/072/208/509/small/close-up-of-a-jet-engine-s-turbine-photo.jpeg" alt="Jet engine turbine" loading="lazy">
-        <div class="cic-overlay">
-          <div class="cic-ata"></div>
-          <div class="cic-name">Engine Components</div>
-          <div class="cic-tags"><span>CFM56</span><span>GE90</span><span>V2500</span></div>
+    </div>
+    <div class="hero-stats-bar">
+      <div class="hero-stat"><span class="n">1K+</span><span class="l">Part Numbers</span></div>
+      <div class="hero-stat"><span class="n">50+</span><span class="l">OEM Partners</span></div>
+      <div class="hero-stat"><span class="n">24/7</span><span class="l">Support</span></div>
+      <div class="hero-stat"><span class="n">40+</span><span class="l">Countries Served</span></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-inner" id="ticker"></div>
+  </div>
+
+  <!-- VISUAL STRIP -->
+  <div class="visual-strip">
+    <div class="vs-item">
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/072/208/509/small/close-up-of-a-jet-engine-s-turbine-photo.jpeg"
+        alt="Jet engine turbine blades" loading="lazy">
+      <div class="vs-label">Engine Components</div>
+    </div>
+    <div class="vs-item">
+      <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=600&q=75" alt="Aircraft cockpit avionics"
+        loading="lazy">
+      <div class="vs-label">Avionics &amp; Navigation</div>
+    </div>
+    <div class="vs-item">
+      <img src="https://images.pexels.com/photos/30050860/pexels-photo-30050860.jpeg" alt="Aircraft nose gear"
+        loading="lazy">
+      <div class="vs-label">Landing Gear Systems</div>
+    </div>
+    <div class="vs-item">
+      <img src="https://www.avihub.in/wp-content/uploads/2021/01/58-consuamable-products.jpg"
+        alt="MRO hangar maintenance" loading="lazy">
+      <div class="vs-label">Consumable Products</div>
+    </div>
+  </div>
+
+  <!-- SEARCH -->
+  <section id="search">
+    <div class="container">
+      <div class="search-inner">
+        <div class="section-eyebrow">Part Finder</div>
+        <h2 class="section-title" style="text-align:center">Search Our <em>Inventory</em></h2>
+        <p class="section-lead" style="margin:0 auto 36px;text-align:center">Enter a part number, ATA chapter,
+          description, or aircraft type. 10,000+ active part numbers available.</p>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Part Number, Description, ATA Chapter, Aircraft Type..."
+            autocomplete="off">
+          <select id="searchCat">
+            <option value="">All Categories</option>
+            <option value="avionics">Avionics</option>
+            <option value="engine">Engine</option>
+            <option value="hydraulics">Hydraulics</option>
+            <option value="landing">Landing Gear</option>
+            <option value="electrical">Electrical</option>
+            <option value="interiors">Consumable Products</option>
+          </select>
+          <button id="searchBtn">Search</button>
         </div>
-      </div>
-      <div class="cat-img-card reveal" data-delay="120" onclick="openCategoryModal(3)">
-        <img src="https://images.pexels.com/photos/30050860/pexels-photo-30050860.jpeg" alt="Landing gear assembly" loading="lazy">
-        <div class="cic-overlay">
-          <div class="cic-ata"></div>
-          <div class="cic-name">Landing Gear</div>
-          <div class="cic-tags"><span>Wheels</span><span>Brakes</span><span>Safran</span></div>
+        <div class="filter-row">
+          <button class="filter-chip active" data-filter="">All Aircraft</button>
+          <button class="filter-chip" data-filter="Boeing">Boeing</button>
+          <button class="filter-chip" data-filter="Airbus">Airbus</button>
+          <button class="filter-chip" data-filter="ATR">AW Helicopter</button>
+          <button class="filter-chip" data-filter="ATR">ATR</button>
+          <button class="filter-chip" data-filter="ATR">Bell Helicopter</button>
+          <button class="filter-chip" data-filter="ATR">Beechcraft</button>
+          <button class="filter-chip" data-filter="ATR">Cessna</button>
+          <button class="filter-chip" data-filter="Embraer">Embraer</button>
+          <button class="filter-chip" data-filter="Bombardier">Bombardier</button>
+          <button class="filter-chip" data-filter="ATR">Engine Parts</button>
+          <button class="filter-chip" data-filter="ATR">Consumable Items</button>
         </div>
-      </div>
-      <div class="cat-img-card reveal" data-delay="180" onclick="openCategoryModal(4)">
-        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=700&q=75" alt="Aircraft maintenance hydraulics" loading="lazy">
-        <div class="cic-overlay">
-          <div class="cic-ata"></div>
-          <div class="cic-name">Hydraulic Systems</div>
-          <div class="cic-tags"><span>Pumps</span><span>Actuators</span><span>Parker</span></div>
-        </div>
-      </div>
-      <div class="cat-img-card reveal" data-delay="240" onclick="openCategoryModal(5)">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=75" alt="Aircraft electrical systems" loading="lazy">
-        <div class="cic-overlay">
-          <div class="cic-ata"></div>
-          <div class="cic-name">Electrical &amp; Power</div>
-          <div class="cic-tags"><span>IDG</span><span>APU</span><span>Generators</span></div>
-        </div>
-      </div>
-      <div class="cat-img-card reveal" data-delay="300" onclick="openCategoryModal(7)">
-        <img src="https://www.avihub.in/wp-content/uploads/2021/01/58-consuamable-products.jpg" alt="Aircraft cabin interior" loading="lazy">
-        <div class="cic-overlay">
-          <div class="cic-ata"></div>
-          <div class="cic-name">Consumable Products</div>
-          <div class="cic-tags"><span>Seats</span><span>IFE</span><span>Galley</span></div>
+        <div id="search-results">
+          <p class="results-meta" id="results-count"></p>
+          <div class="results-grid" id="results-grid"></div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FEATURED PRODUCTS -->
-<!-- <section id="featured"> -->
+  <!-- CATEGORIES WITH IMAGES -->
+  <section id="products">
+    <div class="container">
+      <div class="products-header">
+        <div>
+          <div class="section-eyebrow">Component Categories</div>
+          <h2 class="section-title">What We <em>Supply</em></h2>
+        </div>
+        <a href="#contact" class="btn btn-outline">Full Catalogue &rarr;</a>
+      </div>
+      <div class="cat-img-grid">
+        <div class="cat-img-card reveal" onclick="openCategoryModal(0)">
+          <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=700&q=75" alt="Avionics cockpit"
+            loading="lazy">
+          <div class="cic-overlay">
+            <div class="cic-ata"></div>
+            <div class="cic-name">Avionics &amp; Navigation</div>
+            <div class="cic-tags"><span>LRU</span><span>FMS</span><span>TCAS</span><span>ILS</span></div>
+          </div>
+        </div>
+        <div class="cat-img-card reveal" data-delay="60" onclick="openCategoryModal(1)">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/072/208/509/small/close-up-of-a-jet-engine-s-turbine-photo.jpeg"
+            alt="Jet engine turbine" loading="lazy">
+          <div class="cic-overlay">
+            <div class="cic-ata"></div>
+            <div class="cic-name">Engine Components</div>
+            <div class="cic-tags"><span>CFM56</span><span>GE90</span><span>V2500</span></div>
+          </div>
+        </div>
+        <div class="cat-img-card reveal" data-delay="120" onclick="openCategoryModal(3)">
+          <img src="https://images.pexels.com/photos/30050860/pexels-photo-30050860.jpeg" alt="Landing gear assembly"
+            loading="lazy">
+          <div class="cic-overlay">
+            <div class="cic-ata"></div>
+            <div class="cic-name">Landing Gear</div>
+            <div class="cic-tags"><span>Wheels</span><span>Brakes</span><span>Safran</span></div>
+          </div>
+        </div>
+        <div class="cat-img-card reveal" data-delay="180" onclick="openCategoryModal(4)">
+          <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=700&q=75"
+            alt="Aircraft maintenance hydraulics" loading="lazy">
+          <div class="cic-overlay">
+            <div class="cic-ata"></div>
+            <div class="cic-name">Hydraulic Systems</div>
+            <div class="cic-tags"><span>Pumps</span><span>Actuators</span><span>Parker</span></div>
+          </div>
+        </div>
+        <div class="cat-img-card reveal" data-delay="240" onclick="openCategoryModal(5)">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=75"
+            alt="Aircraft electrical systems" loading="lazy">
+          <div class="cic-overlay">
+            <div class="cic-ata"></div>
+            <div class="cic-name">Electrical &amp; Power</div>
+            <div class="cic-tags"><span>IDG</span><span>APU</span><span>Generators</span></div>
+          </div>
+        </div>
+        <div class="cat-img-card reveal" data-delay="300" onclick="openCategoryModal(7)">
+          <img src="https://www.avihub.in/wp-content/uploads/2021/01/58-consuamable-products.jpg"
+            alt="Aircraft cabin interior" loading="lazy">
+          <div class="cic-overlay">
+            <div class="cic-ata"></div>
+            <div class="cic-name">Consumable Products</div>
+            <div class="cic-tags"><span>Seats</span><span>IFE</span><span>Galley</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <!-- <section id="featured"> -->
   <!-- <div class="container">
     <div class="section-eyebrow">Sample Products</div>
     <h2 class="section-title">Parts Available <em>Now</em></h2>
@@ -196,234 +219,319 @@
       <button class="cat-tab" data-cat="Hydraulics">Hydraulics</button>
       <button class="cat-tab" data-cat="Electrical">Electrical</button>
       <button class="cat-tab" data-cat="Air Conditioning">A/C</button> -->
-      <!-- <button class="cat-tab" data-cat="Cabin Interiors">Rotables</button> -->
-    <!-- </div> -->
-    <!-- <div class="featured-grid" id="featured-grid"></div> -->
+  <!-- <button class="cat-tab" data-cat="Cabin Interiors">Rotables</button> -->
   <!-- </div> -->
-<!-- </section> -->
+  <!-- <div class="featured-grid" id="featured-grid"></div> -->
+  <!-- </div> -->
+  <!-- </section> -->
 
-<!-- WHY ASG -->
-<section id="why">
-  <div class="why-bg-img">
-    <img src="https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?w=1800&q=80" alt="Aircraft maintenance hangar" loading="lazy">
-    <div class="why-bg-overlay"></div>
-  </div>
-  <div class="container why-container">
-    <div class="why-grid">
-      <div class="why-text-col">
-        <div class="section-eyebrow">Why Choose ASG</div>
-        <h2 class="section-title">Your Trusted Aviation <em>Partner</em></h2>
-        <div class="divider"></div>
-        <div class="why-features">
-          <div class="why-feat reveal"><div class="feat-num">01</div><div class="feat-body"><div class="feat-title">Quality Assurance</div><div class="feat-desc">Every part ships with full traceability — FAA 8130-3, EASA Form 1, and Certificate of Conformance. Rigorous incoming inspection on every receipt.</div></div></div>
-          <div class="why-feat reveal" data-delay="80"><div class="feat-num">02</div><div class="feat-body"><div class="feat-title">24/7 AOG Response</div><div class="feat-desc">Aircraft-on-Ground situations demand zero downtime. Our AOG desk operates round-the-clock with expedited sourcing and global freight solutions.</div></div></div>
-          <div class="why-feat reveal" data-delay="160"><div class="feat-num">03</div><div class="feat-body"><div class="feat-title">Global Sourcing Network</div><div class="feat-desc">50+ approved suppliers across North America, Europe, and Asia-Pacific deliver competitive pricing and rapid availability.</div></div></div>
-          <div class="why-feat reveal" data-delay="240"><div class="feat-num">04</div><div class="feat-body"><div class="feat-title">Regulatory Compliance</div><div class="feat-desc">Fully compliant with GCAA, FAA, EASA, and IATA. Operating from Ajman Free Zone under all required aviation trading licenses.</div></div></div>
-        </div>
-      </div>
-      <div class="why-stats-col">
-        <div class="stat-panel reveal"><div class="sp-num">10,000+</div><div class="sp-label">Active Part Numbers in Inventory</div></div>
-        <div class="cert-badges reveal" data-delay="100">
-          <div class="cert-badge"><div class="cn">FAA</div><div class="cl">Approved</div></div>
-          <div class="cert-badge"><div class="cn">EASA</div><div class="cl">Compliant</div></div>
-          <div class="cert-badge"><div class="cn">GCAA</div><div class="cl">Registered</div></div>
-        </div>
-        <div class="stat-panel reveal" data-delay="160" style="background:rgba(26,52,96,0.85)">
-          <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
-            <div><div class="sp-num" style="font-size:34px">40+</div><div class="sp-label">Countries</div></div>
-            <div><div class="sp-num" style="font-size:34px">50+</div><div class="sp-label">OEM Partners</div></div>
-            <div><div class="sp-num" style="font-size:34px">15+</div><div class="sp-label">Years Exp.</div></div>
-          </div>
-        </div>
-      </div>
+  <!-- WHY ASG -->
+  <section id="why">
+    <div class="why-bg-img">
+      <img src="https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?w=1800&q=80"
+        alt="Aircraft maintenance hangar" loading="lazy">
+      <div class="why-bg-overlay"></div>
     </div>
-  </div>
-</section>
-
-<!-- SERVICES BANNER -->
-<section id="services-banner">
-  <div class="sb-grid">
-    <div class="sb-card">
-      <img src="https://images.unsplash.com/photo-1569605803663-e9337d901ff9?w=700&q=75" alt="Aircraft on ground AOG" loading="lazy">
-      <div class="sb-overlay">
-        <div class="sb-icon">&#9889;</div>
-        <div class="sb-title">AOG Support</div>
-        <div class="sb-desc">24/7 emergency parts sourcing. Get your aircraft back in service fast.</div>
-      </div>
-    </div>
-    <div class="sb-card">
-      <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=700&q=75" alt="Global logistics freight" loading="lazy">
-      <div class="sb-overlay">
-        <div class="sb-icon">&#127758;</div>
-        <div class="sb-title">Global Logistics</div>
-        <div class="sb-desc">Expedited freight to 40+ countries with full customs documentation.</div>
-      </div>
-    </div>
-    <div class="sb-card">
-      <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=700&q=75" alt="Quality inspection certified parts" loading="lazy">
-      <div class="sb-overlay">
-        <div class="sb-icon">&#128737;</div>
-        <div class="sb-title">Quality Certified</div>
-        <div class="sb-desc">FAA 8130-3, EASA Form 1, COC documentation on every shipment.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- OEM BRANDS -->
-<section id="brands">
-  <div class="container">
-    <p class="brands-label">Approved OEM &amp; Supplier Network</p>
-    <div class="brands-grid">
-      <div class="brand-item">Boeing</div>
-      <div class="brand-item">Airbus</div>
-      <div class="brand-item">Leonardo</div>
-      <div class="brand-item">Beechcraft</div>
-      <div class="brand-item">Bell Helicopter</div>
-      <div class="brand-item">Bombardier</div>
-      <div class="brand-item">Cessna</div>
-      <div class="brand-item">Embraer</div>
-      <div class="brand-item">Sikorsky Helicopter</div>
-      <div class="brand-item">Spartan</div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="contact-bg">
-    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1800&q=80" alt="UAE skyline Ajman" loading="lazy">
-    <div class="contact-bg-overlay"></div>
-  </div>
-  <div class="container contact-container">
-    <div class="section-eyebrow">Get In Touch</div>
-    <h2 class="section-title">Request a <em>Quote</em></h2>
-    <div class="contact-grid">
-      <div class="contact-info-wrap">
-        <div class="info-card reveal">
-          <div class="info-icon">&#127970;</div>
-          <div class="info-lbl">Headquarters</div>
-          <div class="info-val" style="font-family:var(--font-head);font-size:20px;font-weight:700">ASG FZE LLC</div>
-          <div class="info-val" style="margin-top:6px">26th Floor, Amber Gem Tower<br>Ajman Free Zone, Ajman, UAE</div>
-        </div>
-        <div class="contact-detail-grid">
-          <div class="info-card reveal" data-delay="80">
-            <div class="info-icon">&#9993;</div>
-            <div class="info-lbl">Email</div>
-            <div class="info-val"><a href="mailto:sales@asgfze.com">sales@asgfze.com</a><br><a href="mailto:aog@asgfze.com" style="color:var(--gold)">aog@asgfze.com</a></div>
-          </div>
-          <div class="info-card reveal" data-delay="120">
-            <div class="info-icon">&#128222;</div>
-            <div class="info-lbl">Office</div>
-            <div class="info-val"><a href="tel:+97167000000">+971 6 700 0000</a><br><span style="font-size:12px;color:var(--muted)">Sun-Thu 08:00-18:00 GST</span></div>
+    <div class="container why-container">
+      <div class="why-grid">
+        <div class="why-text-col">
+          <div class="section-eyebrow">Why Choose ASG</div>
+          <h2 class="section-title">Your Trusted Aviation <em>Partner</em></h2>
+          <div class="divider"></div>
+          <div class="why-features">
+            <div class="why-feat reveal">
+              <div class="feat-num">01</div>
+              <div class="feat-body">
+                <div class="feat-title">Quality Assurance</div>
+                <div class="feat-desc">Every part ships with full traceability — FAA 8130-3, EASA Form 1, and
+                  Certificate of Conformance. Rigorous incoming inspection on every receipt.</div>
+              </div>
+            </div>
+            <div class="why-feat reveal" data-delay="80">
+              <div class="feat-num">02</div>
+              <div class="feat-body">
+                <div class="feat-title">24/7 AOG Response</div>
+                <div class="feat-desc">Aircraft-on-Ground situations demand zero downtime. Our AOG desk operates
+                  round-the-clock with expedited sourcing and global freight solutions.</div>
+              </div>
+            </div>
+            <div class="why-feat reveal" data-delay="160">
+              <div class="feat-num">03</div>
+              <div class="feat-body">
+                <div class="feat-title">Global Sourcing Network</div>
+                <div class="feat-desc">50+ approved suppliers across North America, Europe, and Asia-Pacific deliver
+                  competitive pricing and rapid availability.</div>
+              </div>
+            </div>
+            <div class="why-feat reveal" data-delay="240">
+              <div class="feat-num">04</div>
+              <div class="feat-body">
+                <div class="feat-title">Regulatory Compliance</div>
+                <div class="feat-desc">Fully compliant with GCAA, FAA, EASA, and IATA. Operating from Ajman Free Zone
+                  under all required aviation trading licenses.</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="aog-card reveal" data-delay="160">
-          <div class="aog-icon">&#9889;</div>
-          <div>
-            <div class="aog-num">+971 50 000 0000</div>
-            <div class="aog-sub">AOG Hotline &middot; 24 / 7 / 365</div>
+        <div class="why-stats-col">
+          <div class="stat-panel reveal">
+            <div class="sp-num">10,000+</div>
+            <div class="sp-label">Active Part Numbers in Inventory</div>
+          </div>
+          <div class="cert-badges reveal" data-delay="100">
+            <div class="cert-badge">
+              <div class="cn">FAA</div>
+              <div class="cl">Approved</div>
+            </div>
+            <div class="cert-badge">
+              <div class="cn">EASA</div>
+              <div class="cl">Compliant</div>
+            </div>
+            <div class="cert-badge">
+              <div class="cn">GCAA</div>
+              <div class="cl">Registered</div>
+            </div>
+          </div>
+          <div class="stat-panel reveal" data-delay="160" style="background:rgba(26,52,96,0.85)">
+            <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+              <div>
+                <div class="sp-num" style="font-size:34px">40+</div>
+                <div class="sp-label">Countries</div>
+              </div>
+              <div>
+                <div class="sp-num" style="font-size:34px">50+</div>
+                <div class="sp-label">OEM Partners</div>
+              </div>
+              <div>
+                <div class="sp-num" style="font-size:34px">15+</div>
+                <div class="sp-label">Years Exp.</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="map-thumb reveal" data-delay="200">
-          <!-- <img src="https://images.unsplash.com/photo-1548608762-c9b9a759fdc1?w=700&q=75" alt="Ajman UAE aerial view" loading="lazy"> -->
-          <iframe src="https://www.google.com/maps?q=Amber+Gem+Tower+Ajman+UAE&output=embed" width="100%" height="350"
-            style="border:0;" allowfullscreen="" loading="lazy">
-          </iframe>
-          <div class="map-label">&#128205; Amber Gem Tower, 26th Floor, Ajman, UAE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES BANNER -->
+  <section id="services-banner">
+    <div class="sb-grid">
+      <div class="sb-card">
+        <img src="https://images.unsplash.com/photo-1569605803663-e9337d901ff9?w=700&q=75" alt="Aircraft on ground AOG"
+          loading="lazy">
+        <div class="sb-overlay">
+          <div class="sb-icon">&#9889;</div>
+          <div class="sb-title">AOG Support</div>
+          <div class="sb-desc">24/7 emergency parts sourcing. Get your aircraft back in service fast.</div>
         </div>
       </div>
-      <div class="contact-form-wrap">
-        <div class="form-title">Send an Enquiry</div>
-        <form id="contact-form" novalidate>
-          <div class="form-row">
-            <div class="form-group"><label>First Name</label><input type="text" name="fname" placeholder="John" required></div>
-            <div class="form-group"><label>Last Name</label><input type="text" name="lname" placeholder="Smith" required></div>
+      <div class="sb-card">
+        <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=700&q=75"
+          alt="Global logistics freight" loading="lazy">
+        <div class="sb-overlay">
+          <div class="sb-icon">&#127758;</div>
+          <div class="sb-title">Global Logistics</div>
+          <div class="sb-desc">Expedited freight to 40+ countries with full customs documentation.</div>
+        </div>
+      </div>
+      <div class="sb-card">
+        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=700&q=75"
+          alt="Quality inspection certified parts" loading="lazy">
+        <div class="sb-overlay">
+          <div class="sb-icon">&#128737;</div>
+          <div class="sb-title">Quality Certified</div>
+          <div class="sb-desc">FAA 8130-3, EASA Form 1, COC documentation on every shipment.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OEM BRANDS -->
+  <section id="brands">
+    <div class="container">
+      <p class="brands-label">Approved OEM &amp; Supplier Network</p>
+      <div class="brands-grid">
+        <div class="brand-item">Boeing</div>
+        <div class="brand-item">Airbus</div>
+        <div class="brand-item">Leonardo</div>
+        <div class="brand-item">Beechcraft</div>
+        <div class="brand-item">Bell Helicopter</div>
+        <div class="brand-item">Bombardier</div>
+        <div class="brand-item">Cessna</div>
+        <div class="brand-item">Embraer</div>
+        <div class="brand-item">Sikorsky Helicopter</div>
+        <div class="brand-item">Spartan</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-bg">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1800&q=80" alt="UAE skyline Ajman"
+        loading="lazy">
+      <div class="contact-bg-overlay"></div>
+    </div>
+    <div class="container contact-container">
+      <div class="section-eyebrow">Get In Touch</div>
+      <h2 class="section-title">Request a <em>Quote</em></h2>
+      <div class="contact-grid">
+        <div class="contact-info-wrap">
+          <div class="info-card reveal">
+            <div class="info-icon">&#127970;</div>
+            <div class="info-lbl">Headquarters</div>
+            <div class="info-val" style="font-family:var(--font-head);font-size:20px;font-weight:700">ASG FZE LLC</div>
+            <div class="info-val" style="margin-top:6px">26th Floor, Amber Gem Tower<br>Ajman Free Zone, Ajman, UAE
+            </div>
           </div>
-          <div class="form-group"><label>Company / Airline / MRO</label><input type="text" name="company" placeholder="Your organization" required></div>
-          <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="you@airline.com" required></div>
-          <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" name="phone" placeholder="+971 ..."></div>
-          <div class="form-group">
-            <label>Enquiry Type</label>
-            <select name="type">
-              <option value="">Select...</option>
-              <option>Part Number Enquiry</option>
-              <option>AOG Support Request</option>
-              <option>General Quotation</option>
-              <option>Consignment / Trade</option>
-              <option>Partnership / Agency</option>
-            </select>
+          <div class="contact-detail-grid">
+            <div class="info-card reveal" data-delay="80">
+              <div class="info-icon">&#9993;</div>
+              <div class="info-lbl">Email</div>
+              <div class="info-val"><a href="mailto:sales@asgfze.com">sales@asgfze.com</a><br><a
+                  href="mailto:aog@asgfze.com" style="color:var(--gold)">aog@asgfze.com</a></div>
+            </div>
+            <div class="info-card reveal" data-delay="120">
+              <div class="info-icon">&#128222;</div>
+              <div class="info-lbl">Office</div>
+              <div class="info-val"><a href="tel:+97167000000">+971 6 700 0000</a><br><span
+                  style="font-size:12px;color:var(--muted)">Mon-Sat 10:30-12:00 GST</span></div>
+            </div>
           </div>
-          <div class="form-group">
-            <label>Part Number(s) &amp; Details</label>
-            <textarea name="details" placeholder="Part numbers, quantities, condition required (New / Serviceable / Overhauled), aircraft type..." required></textarea>
+          <div class="aog-card reveal" data-delay="160">
+            <div class="aog-icon">&#9889;</div>
+            <div>
+              <div class="aog-num">+971 50 000 0000</div>
+              <div class="aog-sub">AOG Hotline &middot; 24 / 7 / 365</div>
+            </div>
           </div>
-          <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;padding:16px">Submit Enquiry &rarr;</button>
-          <p class="form-note">We typically respond within 2 business hours. AOG? Call the hotline above.</p>
-          <div class="form-success" id="form-success">&#10003; &nbsp;Enquiry received. Our team will be in touch shortly.</div>
-        </form>
+          <div class="map-thumb reveal" data-delay="200">
+            <!-- <img src="https://images.unsplash.com/photo-1548608762-c9b9a759fdc1?w=700&q=75" alt="Ajman UAE aerial view" loading="lazy"> -->
+            <iframe src="https://www.google.com/maps?q=Amber+Gem+Tower+Ajman+UAE&output=embed" width="100%" height="350"
+              style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            <div class="map-label">&#128205; Amber Gem Tower, 26th Floor, Ajman, UAE</div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <div class="form-title">Send an Enquiry</div>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group"><label>First Name</label><input type="text" name="fname" placeholder="John"
+                  required></div>
+              <div class="form-group"><label>Last Name</label><input type="text" name="lname" placeholder="Smith"
+                  required></div>
+            </div>
+            <div class="form-group"><label>Company / Airline / MRO</label><input type="text" name="company"
+                placeholder="Your organization" required></div>
+            <div class="form-group"><label>Email Address</label><input type="email" name="email"
+                placeholder="you@airline.com" required></div>
+            <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" name="phone"
+                placeholder="+971 ..."></div>
+            <div class="form-group">
+              <label>Enquiry Type</label>
+              <select name="type">
+                <option value="">Select...</option>
+                <option>Part Number Enquiry</option>
+                <!-- <option>AOG Support Request</option> -->
+                <option>General Quotation</option>
+                <option>Consignment / Trade</option>
+                <option>Partnership / Agency</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Part Number(s) &amp; Details</label>
+              <textarea name="details"
+                placeholder="Part numbers, quantities, condition required (New / Serviceable / Overhauled), aircraft type..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;padding:16px">Submit
+              Enquiry &rarr;</button>
+            <p class="form-note">We typically respond within 2 business hours. AOG? Call the hotline above.</p>
+            <div class="form-success" id="form-success">&#10003; &nbsp;Enquiry received. Our team will be in touch
+              shortly.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo" style="margin-bottom:16px;display:inline-flex">
+            <div class="logo-mark">ASG</div>
+            <div class="logo-text-wrap">
+              <span class="logo-primary">ASG FZE LLC</span>
+              <span class="logo-sub">Aircraft Parts &amp; Components</span>
+            </div>
+          </a>
+          <p>Specialist aircraft spare parts and components trader, 26th Floor, Amber Gem Tower, Ajman Free Zone, UAE.
+            Serving airlines, MROs, and operators worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#products">Avionics</a></li>
+            <li><a href="#products">Engine Components</a></li>
+            <li><a href="#products">Airframe Parts</a></li>
+            <li><a href="#products">Landing Gear</a></li>
+            <li><a href="#products">Hydraulic Systems</a></li>
+            <li><a href="#products">Cabin Interiors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#contact">AOG Support</a></li>
+            <li><a href="#contact">Parts Trading</a></li>
+            <li><a href="#contact">Consignment Sales</a></li>
+            <li><a href="#contact">Technical Advisory</a></li>
+            <li><a href="#contact">Global Logistics</a></li>
+            <li><a href="#contact">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#why">About ASG</a></li>
+            <li><a href="#why">Certifications</a></li>
+            <li><a href="#brands">OEM Network</a></li>
+            <li><a href="#contact">Careers</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ASG FZE LLC &middot; 26th Floor, Amber Gem Tower, Ajman, UAE. All rights reserved.</p>
+        <div class="footer-badges">
+          <span class="f-badge">FAA Approved</span>
+          <span class="f-badge">EASA Compliant</span>
+          <span class="f-badge">GCAA Registered</span>
+          <span class="f-badge">Ajman FZ Licensed</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modal-head">
+        <span class="modal-head-title" id="modal-head-title">Details</span>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close">&#10005;</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+      <div class="modal-actions">
+        <button class="btn btn-gold" id="modal-quote-btn">Request Quote</button>
+        <button class="btn btn-outline" id="modal-cancel-btn">Close</button>
       </div>
     </div>
   </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="#hero" class="nav-logo" style="margin-bottom:16px;display:inline-flex">
-          <div class="logo-mark">ASG</div>
-          <div class="logo-text-wrap">
-            <span class="logo-primary">ASG FZE LLC</span>
-            <span class="logo-sub">Aircraft Parts &amp; Components</span>
-          </div>
-        </a>
-        <p>Specialist aircraft spare parts and components trader, 26th Floor, Amber Gem Tower, Ajman Free Zone, UAE. Serving airlines, MROs, and operators worldwide.</p>
-      </div>
-      <div class="footer-col"><h4>Products</h4><ul>
-        <li><a href="#products">Avionics</a></li><li><a href="#products">Engine Components</a></li>
-        <li><a href="#products">Airframe Parts</a></li><li><a href="#products">Landing Gear</a></li>
-        <li><a href="#products">Hydraulic Systems</a></li><li><a href="#products">Cabin Interiors</a></li>
-      </ul></div>
-      <div class="footer-col"><h4>Services</h4><ul>
-        <li><a href="#contact">AOG Support</a></li><li><a href="#contact">Parts Trading</a></li>
-        <li><a href="#contact">Consignment Sales</a></li><li><a href="#contact">Technical Advisory</a></li>
-        <li><a href="#contact">Global Logistics</a></li><li><a href="#contact">Documentation</a></li>
-      </ul></div>
-      <div class="footer-col"><h4>Company</h4><ul>
-        <li><a href="#why">About ASG</a></li><li><a href="#why">Certifications</a></li>
-        <li><a href="#brands">OEM Network</a></li><li><a href="#contact">Careers</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul></div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 ASG FZE LLC &middot; 26th Floor, Amber Gem Tower, Ajman, UAE. All rights reserved.</p>
-      <div class="footer-badges">
-        <span class="f-badge">FAA Approved</span>
-        <span class="f-badge">EASA Compliant</span>
-        <span class="f-badge">GCAA Registered</span>
-        <span class="f-badge">Ajman FZ Licensed</span>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- MODAL -->
-<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
-  <div class="modal">
-    <div class="modal-head">
-      <span class="modal-head-title" id="modal-head-title">Details</span>
-      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close">&#10005;</button>
-    </div>
-    <div class="modal-body" id="modal-body"></div>
-    <div class="modal-actions">
-      <button class="btn btn-gold" id="modal-quote-btn">Request Quote</button>
-      <button class="btn btn-outline" id="modal-cancel-btn">Close</button>
-    </div>
-  </div>
-</div>
-
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
