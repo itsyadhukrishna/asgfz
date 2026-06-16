@@ -23,7 +23,7 @@ html { scroll-behavior: smooth; }
   --border:     rgba(200,146,42,0.22);
   --border-lt:  rgba(200,146,42,0.12);
   --shadow:     0 8px 48px rgba(7,15,33,0.6);
-  --font-head:  'Playfair Display', Georgia, serif;
+  --font-head:  'DM Sans', Georgia, serif;
   --font-body:  'DM Sans', sans-serif;
   --font-mono:  'Inconsolata', monospace;
 }

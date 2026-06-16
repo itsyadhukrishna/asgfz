@@ -26,26 +26,26 @@ const TICKER_ITEMS = [
 
 /* ── CATEGORIES DATA ── */
 const CATEGORIES = [
-  { icon:'📡', ata:'ATA 23/34', name:'Avionics & Navigation', desc:'LRUs, VHF/HF radios, FMS, TCAS II, weather radar, ILS/VOR, transponders, ADIRU, and cockpit displays.', tags:['LRU','FMS','TCAS','ILS','ADIRU'] },
-  { icon:'🔥', ata:'ATA 71-80', name:'Engine Components', desc:'Fan blades, combustor liners, turbine vanes, fuel nozzles, ignition, and gearboxes for CFM56, GE90, V2500, PW4000.', tags:['CFM56','GE90','V2500','PW4000'] },
-  { icon:'🛩️', ata:'ATA 57',   name:'Airframe & Structures', desc:'Wing panels, fuselage skins, bulkheads, floor beams, control surfaces, fairings, and composite repair materials.', tags:['Composite','Structural','Control Surfaces'] },
-  { icon:'⚙️', ata:'ATA 29',   name:'Hydraulic Systems', desc:'Hydraulic pumps, actuators, manifolds, accumulators, reservoirs, hoses, and fittings for all major types.', tags:['Pumps','Actuators','Eaton','Parker'] },
-  { icon:'🛞', ata:'ATA 32',   name:'Landing Gear', desc:'MLG/NLG assemblies, wheels, brakes, brake control valves, torque links, shock struts, and downlocks.', tags:['Wheels','Brakes','Safran','Messier'] },
-  { icon:'🔋', ata:'ATA 24',   name:'Electrical & Power', desc:'Generators, IDGs, APU starters, NiCad batteries, power distribution panels, circuit breakers, wiring.', tags:['IDG','APU','Batteries','Generators'] },
-  { icon:'❄️', ata:'ATA 21',   name:'Air Conditioning / Bleed', desc:'ACM packs, heat exchangers, flow control valves, ozone converters, pack controllers.', tags:['ACM','Pressurization','Valves'] },
-  { icon:'🛋️', ata:'ATA 25',  name:'Cabin & Interiors', desc:'PSUs, overhead bins, economy & business seats, galley inserts, lavatories, and IFE systems.', tags:['PSU','Galley','IFE','Seats'] },
-  { icon:'🔩', ata:'ATA 05',   name:'Consumables & Hardware', desc:'Fasteners, seals, O-rings, gaskets, filters, lubricants, adhesives, and standard aviation hardware.', tags:['Fasteners','Seals','Filters'] },
+  { icon: '📡', ata: 'ATA 23/34', name: 'Avionics & Navigation', desc: 'LRUs, VHF/HF radios, FMS, TCAS II, weather radar, ILS/VOR, transponders, ADIRU, and cockpit displays.', tags: ['LRU', 'FMS', 'TCAS', 'ILS', 'ADIRU'] },
+  { icon: '🔥', ata: 'ATA 71-80', name: 'Engine Components', desc: 'Fan blades, combustor liners, turbine vanes, fuel nozzles, ignition, and gearboxes for CFM56, GE90, V2500, PW4000.', tags: ['CFM56', 'GE90', 'V2500', 'PW4000'] },
+  { icon: '🛩️', ata: 'ATA 57', name: 'Airframe & Structures', desc: 'Wing panels, fuselage skins, bulkheads, floor beams, control surfaces, fairings, and composite repair materials.', tags: ['Composite', 'Structural', 'Control Surfaces'] },
+  { icon: '⚙️', ata: 'ATA 29', name: 'Hydraulic Systems', desc: 'Hydraulic pumps, actuators, manifolds, accumulators, reservoirs, hoses, and fittings for all major types.', tags: ['Pumps', 'Actuators', 'Eaton', 'Parker'] },
+  { icon: '🛞', ata: 'ATA 32', name: 'Landing Gear', desc: 'MLG/NLG assemblies, wheels, brakes, brake control valves, torque links, shock struts, and downlocks.', tags: ['Wheels', 'Brakes', 'Safran', 'Messier'] },
+  { icon: '🔋', ata: 'ATA 24', name: 'Electrical & Power', desc: 'Generators, IDGs, APU starters, NiCad batteries, power distribution panels, circuit breakers, wiring.', tags: ['IDG', 'APU', 'Batteries', 'Generators'] },
+  { icon: '❄️', ata: 'ATA 21', name: 'Air Conditioning / Bleed', desc: 'ACM packs, heat exchangers, flow control valves, ozone converters, pack controllers.', tags: ['ACM', 'Pressurization', 'Valves'] },
+  { icon: '🛋️', ata: 'ATA 25', name: 'Cabin & Interiors', desc: 'PSUs, overhead bins, economy & business seats, galley inserts, lavatories, and IFE systems.', tags: ['PSU', 'Galley', 'IFE', 'Seats'] },
+  { icon: '🔩', ata: 'ATA 05', name: 'Consumables & Hardware', desc: 'Fasteners, seals, O-rings, gaskets, filters, lubricants, adhesives, and standard aviation hardware.', tags: ['Fasteners', 'Seals', 'Filters'] },
 ];
 
 /* ── PRODUCT IMAGES (Unsplash - aviation themed) ── */
 const PRODUCT_IMAGES = {
-  'Avionics':       'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=600&q=75',
-  'Engine':         'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=75',
-  'Landing Gear':   'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&q=75',
-  'Hydraulics':     'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=75',
-  'Electrical':     'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75',
-  'Air Conditioning':'https://images.unsplash.com/photo-1569605803663-e9337d901ff9?w=600&q=75',
-  'Cabin Interiors':'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=75',
+  'Avionics': 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=600&q=75',
+  'Engine': 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=75',
+  'Landing Gear': 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&q=75',
+  'Hydraulics': 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=75',
+  'Electrical': 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75',
+  'Air Conditioning': 'https://images.unsplash.com/photo-1569605803663-e9337d901ff9?w=600&q=75',
+  'Cabin Interiors': 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=75',
 };
 
 /* ── SAMPLE PRODUCTS ── */
@@ -57,7 +57,7 @@ const SAMPLE_PRODUCTS = [
     desc: 'Dual-channel VHF transceiver with 8.33kHz channel spacing. Certified for commercial airline use on all major aircraft types.',
     ac: 'B737 / B757 / A320', cond: 'New / Overhauled', stock: 'in', stockLabel: 'In Stock',
     cert: 'FAA 8130-3 / EASA Form 1',
-    specs: { 'Freq Range':'118.000–151.975 MHz','Channel':'8.33 kHz','Output':'25W nominal','Weight':'2.1 kg','OEM':'Honeywell Aerospace' }
+    specs: { 'Freq Range': '118.000–151.975 MHz', 'Channel': '8.33 kHz', 'Output': '25W nominal', 'Weight': '2.1 kg', 'OEM': 'Honeywell Aerospace' }
   },
   {
     img: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=700&q=75',
@@ -66,7 +66,7 @@ const SAMPLE_PRODUCTS = [
     desc: 'Main Landing Gear wheel assembly complete with carbon heat pack and brake wear indicators. Zero-time overhaul.',
     ac: 'Boeing 737-800/-900', cond: 'Overhauled', stock: 'in', stockLabel: 'In Stock',
     cert: 'FAA 8130-3 + Full Trace',
-    specs: { 'Aircraft':'B737-800/900','Condition':'Overhauled (Zero-Time)','Material':'Carbon Brake Pack','OEM':'Safran Landing Systems' }
+    specs: { 'Aircraft': 'B737-800/900', 'Condition': 'Overhauled (Zero-Time)', 'Material': 'Carbon Brake Pack', 'OEM': 'Safran Landing Systems' }
   },
   {
     img: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=75',
@@ -75,7 +75,7 @@ const SAMPLE_PRODUCTS = [
     desc: 'OEM CFM56-7B titanium fan blade, fully serviceable with all traceability documentation. Suitable for B737NG operators.',
     ac: 'Boeing 737NG (CFM56-7B)', cond: 'Serviceable', stock: 'low', stockLabel: 'Low Stock',
     cert: 'EASA Form 1 + OEM Trace',
-    specs: { 'Engine':'CFM56-7B','Material':'Titanium Alloy','Condition':'Serviceable','Traceability':'Full OEM Trace','OEM':'CFM International' }
+    specs: { 'Engine': 'CFM56-7B', 'Material': 'Titanium Alloy', 'Condition': 'Serviceable', 'Traceability': 'Full OEM Trace', 'OEM': 'CFM International' }
   },
   {
     img: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=700&q=75',
@@ -84,7 +84,7 @@ const SAMPLE_PRODUCTS = [
     desc: 'Traffic Collision Avoidance System (TCAS II v7.1) computer unit, dual processor, fully tested and serviceable.',
     ac: 'B737 / B757 / A330', cond: 'Serviceable', stock: 'in', stockLabel: 'In Stock',
     cert: 'FAA 8130-3 / EASA Form 1',
-    specs: { 'Standard':'TCAS II v7.1','Processor':'Dual','MTBur':'5,000+ hrs','OEM':'Collins Aerospace' }
+    specs: { 'Standard': 'TCAS II v7.1', 'Processor': 'Dual', 'MTBur': '5,000+ hrs', 'OEM': 'Collins Aerospace' }
   },
   {
     img: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=700&q=75',
@@ -93,7 +93,7 @@ const SAMPLE_PRODUCTS = [
     desc: 'Variable pressure, engine-driven hydraulic pump for Airbus A320/A321 family. With test report and full documentation.',
     ac: 'Airbus A320 / A321', cond: 'Overhauled', stock: 'order', stockLabel: 'On Order',
     cert: 'EASA Form 1',
-    specs: { 'Pressure':'3,000 PSI','Flow Rate':'37 GPM','Drive':'Engine-Driven','Fluid':'Skydrol 5','OEM':'Parker Hannifin' }
+    specs: { 'Pressure': '3,000 PSI', 'Flow Rate': '37 GPM', 'Drive': 'Engine-Driven', 'Fluid': 'Skydrol 5', 'OEM': 'Parker Hannifin' }
   },
   {
     img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=75',
@@ -102,7 +102,7 @@ const SAMPLE_PRODUCTS = [
     desc: 'Auxiliary Power Unit starter/generator for Boeing 737 Classic and NG. Dual function start and generate capability.',
     ac: 'Boeing 737 CL / NG', cond: 'New', stock: 'in', stockLabel: 'In Stock',
     cert: 'FAA 8130-3',
-    specs: { 'Type':'Starter/Generator','Output':'90kVA / 115VAC','Frequency':'400 Hz','APU':'Allied Signal 131-9B','OEM':'Honeywell' }
+    specs: { 'Type': 'Starter/Generator', 'Output': '90kVA / 115VAC', 'Frequency': '400 Hz', 'APU': 'Allied Signal 131-9B', 'OEM': 'Honeywell' }
   },
   {
     img: 'https://images.unsplash.com/photo-1569605803663-e9337d901ff9?w=700&q=75',
@@ -111,7 +111,7 @@ const SAMPLE_PRODUCTS = [
     desc: 'Three-wheel Air Cycle Machine for environmental control system. New with full manufacturer certification.',
     ac: 'Boeing 737-300/400/500', cond: 'New', stock: 'in', stockLabel: 'In Stock',
     cert: 'FAA 8130-3 / COC',
-    specs: { 'Type':'3-Wheel ACM','Air Flow':'2.25 lb/s','Max RPM':'80,000','Weight':'7.8 kg','OEM':'Collins / Hamilton Sundstrand' }
+    specs: { 'Type': '3-Wheel ACM', 'Air Flow': '2.25 lb/s', 'Max RPM': '80,000', 'Weight': '7.8 kg', 'OEM': 'Collins / Hamilton Sundstrand' }
   },
   {
     img: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=700&q=75',
@@ -120,27 +120,24 @@ const SAMPLE_PRODUCTS = [
     desc: '10.6" HD In-Flight Entertainment seat display, compatible with Panasonic eX3 system. Refurbished to serviceable standard.',
     ac: 'A350 / B787 / A380', cond: 'Serviceable', stock: 'low', stockLabel: 'Low Stock',
     cert: 'COC + Test Report',
-    specs: { 'Screen':'10.6" HD LCD','System':'Panasonic eX3','Interfaces':'USB / Headphone','OEM':'Panasonic Avionics' }
+    specs: { 'Screen': '10.6" HD LCD', 'System': 'Panasonic eX3', 'Interfaces': 'USB / Headphone', 'OEM': 'Panasonic Avionics' }
   },
 ];
 
 /* ── INVENTORY (for search) ── */
 const INVENTORY = [
-  { pn:'5000135-1',   name:'TCAS II Computer Unit',          cat:'Avionics',         ac:'B737/B757/A330',    cond:'Serviceable', stock:'in-stock' },
-  { pn:'822-0880-001',name:'VHF Transceiver',                cat:'Avionics',         ac:'All Types',         cond:'New',         stock:'in-stock' },
-  { pn:'3801450-1',   name:'MLG Wheel Assembly',             cat:'Landing Gear',     ac:'B737-800',          cond:'Overhauled',  stock:'in-stock' },
-  { pn:'5704420-2',   name:'Engine Driven Hydraulic Pump',   cat:'Hydraulics',       ac:'A320/A321',         cond:'Overhauled',  stock:'on-order' },
-  { pn:'CM-2500-4',   name:'APU Starter/Generator',          cat:'Electrical',       ac:'B737 CL/NG',        cond:'New',         stock:'in-stock' },
-  { pn:'S283Q004-5',  name:'Brake Control Valve',            cat:'Landing Gear',     ac:'A330/A340',         cond:'Overhauled',  stock:'in-stock' },
-  { pn:'1159880-1',   name:'EGT Thermocouple Assembly',      cat:'Engine',           ac:'CFM56-7B',          cond:'New',         stock:'in-stock' },
-  { pn:'2118012-7',   name:'FMS Control Display Unit',       cat:'Avionics',         ac:'B737NG',            cond:'Serviceable', stock:'on-order' },
-  { pn:'9230M93G04',  name:'CFM56-7B Fan Blade',             cat:'Engine',           ac:'B737NG',            cond:'Serviceable', stock:'in-stock' },
-  { pn:'211-58081-9', name:'Air Cycle Machine Pack',         cat:'Air Conditioning', ac:'B737 Classic',      cond:'New',         stock:'in-stock' },
-  { pn:'IFE-PXW-440', name:'IFE Seat Display Unit',         cat:'Cabin Interiors',  ac:'A350/B787',         cond:'Serviceable', stock:'in-stock' },
-  { pn:'CM-4031-6',   name:'Nose Gear Steering Actuator',   cat:'Landing Gear',     ac:'A320 Family',       cond:'Overhauled',  stock:'on-order' },
-  { pn:'HW-2200-APU', name:'Honeywell GTCP36-300 APU',      cat:'Electrical',       ac:'B737',              cond:'Serviceable', stock:'in-stock' },
-  { pn:'GE90-FAN-01', name:'GE90-115B Fan Blade',           cat:'Engine',           ac:'B777-300ER',        cond:'Serviceable', stock:'in-stock' },
-  { pn:'PRK-7201-A',  name:'Parker Brake Metering Valve',   cat:'Hydraulics',       ac:'A320 Family',       cond:'Overhauled',  stock:'in-stock' },
+  { pn: '000-01C11T138', name: 'HOSE ASSY , NON METALLIC', cat: 'Avionics', ac: 'Leonardo AW 109', cond: 'NW', stock: 'in-stock' },
+  { pn: 'LS12326B00688B', name: 'SPACER', cat: 'Avionics', ac: 'Embraer E-Jets', cond: 'NW', stock: 'in-stock' },
+  { pn: '3G6320V04453', name: 'FILTER ', cat: 'Avionics', ac: 'Leonardo AW139', cond: 'NW', stock: 'in-stock' },
+  { pn: '315892B', name: 'TUBE ASSY', cat: 'Avionics', ac: 'Bombardier/Learjet', cond: 'NW', stock: 'in-stock' },
+  { pn: '704A33651165', name: 'BEARING', cat: 'Avionics', ac: 'Airbus Helicopters H130/AS350 B3 Series', cond: 'NW', stock: 'in-stock' },
+  { pn: '301-2701', name: 'LIGHT', cat: 'Avionics', ac: 'ATR 42 and ATR 72 regional airliners.', cond: 'NW', stock: 'in-stock' },
+  { pn: '406-310-406-101', name: 'Bushing', cat: 'Avionics', ac: 'Bell Helicopter (Bell 406/OH-58 Series)', cond: 'NW', stock: 'in-stock' },
+  { pn: '1-480305-0', name: 'Connector', cat: 'Avionics', ac: 'Beechcraft  King Air C90/E90 Series', cond: 'NW', stock: 'in-stock' },
+  { pn: '000-01C11T138', name: 'HOSE ASSY , NON METALLIC', cat: 'Avionics', ac: 'Leonardo AW 109', cond: 'NW', stock: 'in-stock' },
+  { pn: '000-01C11T138', name: 'HOSE ASSY , NON METALLIC', cat: 'Avionics', ac: 'Leonardo AW 109', cond: 'NW', stock: 'in-stock' },
+  { pn: '000-01C11T138', name: 'HOSE ASSY , NON METALLIC', cat: 'Avionics', ac: 'Leonardo AW 109', cond: 'NW', stock: 'in-stock' },
+
 ];
 
 /* ══ INIT ══════════════════════════════════════════════════ */
@@ -230,17 +227,17 @@ function initSearch() {
 }
 
 function runSearch() {
-  const q   = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
+  const q = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
   const cat = (document.getElementById('searchCat')?.value || '');
   const resultsEl = document.getElementById('search-results');
-  const grid      = document.getElementById('results-grid');
-  const countEl   = document.getElementById('results-count');
+  const grid = document.getElementById('results-grid');
+  const countEl = document.getElementById('results-count');
   if (!resultsEl || !grid || !countEl) return;
 
   let results = INVENTORY.filter(item => {
-    const matchQ      = !q || item.pn.toLowerCase().includes(q) || item.name.toLowerCase().includes(q) || item.cat.toLowerCase().includes(q) || item.ac.toLowerCase().includes(q);
+    const matchQ = !q || item.pn.toLowerCase().includes(q) || item.name.toLowerCase().includes(q) || item.cat.toLowerCase().includes(q) || item.ac.toLowerCase().includes(q);
     const matchFilter = !activeFilter || item.ac.toLowerCase().includes(activeFilter.toLowerCase());
-    const matchCat    = !cat || item.cat.toLowerCase().includes(cat.toLowerCase());
+    const matchCat = !cat || item.cat.toLowerCase().includes(cat.toLowerCase());
     return matchQ && matchFilter && matchCat;
   });
 
@@ -248,10 +245,10 @@ function runSearch() {
 
   countEl.textContent = `${results.length} result${results.length !== 1 ? 's' : ''} found`;
   grid.innerHTML = results.map(item => `
-    <div class="result-card" onclick='openInventoryModal(${JSON.stringify(item).replace(/'/g,"&#39;")})'>
-      <div class="result-pn">${item.pn}</div>
-      <div class="result-name">${item.name}</div>
-      <div class="result-meta">${item.cat} &middot; ${item.ac} &middot; ${item.cond}</div>
+    <div class="result-card" onclick='openInventoryModal(${JSON.stringify(item).replace(/'/g, "&#39;")})'>
+      <div class="result-pn">${item.name}</div>
+      <div class="result-name">${item.pn}</div>
+      <div class="result-meta">${item.ac} &middot; ${item.cond}</div>
       <span class="avail-badge ${item.stock === 'in-stock' ? 'in-stock' : 'on-order'}">${item.stock === 'in-stock' ? '&#10003; In Stock' : '&#9203; On Order'}</span>
     </div>
   `).join('');
@@ -288,14 +285,14 @@ function closeModal() {
 function openCategoryModal(idx) {
   const c = CATEGORIES[idx];
   if (!c) return;
-  openModal(c.name,
+  openModal(c.pn,
     `<div class="modal-pn">${c.ata}</div>
      <div style="font-size:52px;margin-bottom:16px">${c.icon}</div>
      <p>${c.desc}</p>
      <p style="color:var(--white);font-size:13px;margin-bottom:10px;font-weight:600">Part Types Available:</p>
      <div style="display:flex;gap:8px;flex-wrap:wrap">${c.tags.map(t =>
-       `<span style="padding:5px 12px;border:1px solid var(--border);font-family:var(--font-mono);font-size:11px;color:var(--gold-pale);letter-spacing:1px;background:rgba(200,146,42,0.07)">${t}</span>`
-     ).join('')}</div>
+      `<span style="padding:5px 12px;border:1px solid var(--border);font-family:var(--font-mono);font-size:11px;color:var(--gold-pale);letter-spacing:1px;background:rgba(200,146,42,0.07)">${t}</span>`
+    ).join('')}</div>
      <p style="margin-top:20px">Contact our sales team with your part number requirements. We source globally with full OEM traceability.</p>`
   );
 }
@@ -303,12 +300,11 @@ function openCategoryModal(idx) {
 function openProductModal(idx) {
   const p = SAMPLE_PRODUCTS[idx];
   if (!p) return;
-  const rows = Object.entries(p.specs || {}).map(([k,v]) =>
+  const rows = Object.entries(p.specs || {}).map(([k, v]) =>
     `<tr><td>${k}</td><td>${v}</td></tr>`
   ).join('');
-  openModal(p.name,
-    `<div class="modal-pn">${p.pn}</div>
-     <div class="modal-product-name">${p.name}</div>
+  openModal(p.pn,
+    `<div class="modal-product-name">${p.name}</div>
      <p>${p.desc}</p>
      <table class="specs-table">${rows}
        <tr><td>Aircraft</td><td>${p.ac}</td></tr>
@@ -321,9 +317,8 @@ function openProductModal(idx) {
 }
 
 function openInventoryModal(item) {
-  openModal(item.name,
-    `<div class="modal-pn">${item.pn}</div>
-     <div class="modal-product-name">${item.name}</div>
+  openModal(item.pn,
+    `<div class="modal-product-name">${item.name}</div>
      <table class="specs-table">
        <tr><td>Part Number</td><td>${item.pn}</td></tr>
        <tr><td>Category</td><td>${item.cat}</td></tr>
@@ -343,7 +338,7 @@ function initNav() {
     navbar?.classList.toggle('scrolled', window.scrollY > 50);
   }, { passive: true });
 
-  const ham     = document.getElementById('hamburger');
+  const ham = document.getElementById('hamburger');
   const navLinks = document.getElementById('nav-links');
   ham?.addEventListener('click', () => {
     const isOpen = ham.classList.toggle('open');
