@@ -249,18 +249,14 @@ a {
   align-items: center;
   gap: 14px;
 }
-.logo-mark {
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, var(--gold), var(--gold-lt));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-head);
-  font-weight: 800;
-  font-size: 15px;
-  color: var(--navy-dark);
-  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+
+ .logo-mark {
+  width: 80px;
+  height: 80px;
+  background-image: url('./img/logo_ASG.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .logo-text-wrap {
   display: flex;
